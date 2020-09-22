@@ -1,0 +1,58 @@
+<!--Vazão da Bomba bbl-->
+PD=0,1166*(d^2)*Sp*N
+
+<!--Vazão da Bomba m³-->
+PD=0,01853*(d^2)*Sp*N
+
+<!--Eficiência Volumétrica-->
+Ev=Ql/PD
+
+<!--Frequência natural(hastes homogêneas)-->
+No=245000/L
+
+<!--Frequência natural(hastes homogêneas)-->
+N'o=Fc*No
+
+<!--Velocidade de Bombeio-->
+N/N'o=(N*L)/(245000*Fc)
+
+<!--Carga de Fluído-->
+Fo=0,34*H*(d^2)*Gr
+
+<!--Elongação da coluna de hastes-->
+1/Kr=L*Er
+
+Kr = 1 / L*Er
+
+<!--Curso Efetivo do Pistão (coluna ancorada)-->
+Sp=[S*(Sp/S)]
+
+<!--Curso Efetivo do Pistão (coluna não ancorada)-->
+Sp=[S*(Sp/S)] - [Fo*(1/Kt)]
+
+1/Kt=L*Et
+
+<!--Peso da Coluna de Hastes no ar-->
+Wr=pi*Li
+
+<!--Peso da Coluna de Hastes no fluido->
+Wrf=Wr*(1-0,128Gr)
+
+<!--Cargas máximas na haste polida-->
+PPRL=Wrf+[(F1/S*Kr)*S*Kr]
+
+<!--Cargas mínimas na haste polida-->
+MPRL=Wrf-[(F2/S*Kr)*S*Kr]
+
+<!--Tensão mínima-->
+tmin=PPRL/Ar
+
+<!--Tensão máxima-->
+tmax=MPRL/Ar
+
+<!--Tensão admissível-->
+tadm=((T/4)+0,5625*tmin)*S*F
+
+<!--Potência Requerida da haste polida-->
+PRHP = 2,53*(10^-6)*(F3/SKr)*S*Kr*S*N
+
