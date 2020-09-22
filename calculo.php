@@ -84,7 +84,7 @@
 			</div>
              <div class="col-lg-4 col-md-6 text-center" >
                         <div class="mt-5">
-							<form id="formExemplo" data-toggle="validator" role="form" method="POST" action="dimensionar.php"> 	
+							<form id="formExemplo" data-toggle="validator" role="form" method="POST" href="dimensionar.php"> 	
 								<h3 style="font-size:22px"> Grau API </h3>
 								<select name="api" style="margin-left: 8px" placeholder="Grau API">
 								<option> Selecione o Grau API </option>
