@@ -1,5 +1,5 @@
 # https://stephaniel26.github.io/ProjetoBombeioMecanico/
-#  <!DOCTYPE html>
+ 
 <html lang="pt-br, en">
     <head>
         <meta charset="utf-8" />
